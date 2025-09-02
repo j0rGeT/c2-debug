@@ -1,0 +1,44 @@
+[package]
+name = "c2-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+c2-common = { path = "../common" }
+
+# Async and networking
+tokio = { workspace = true, features = ["full"] }
+tokio-tungstenite = { workspace = true }
+tungstenite = "0.20"
+futures-util = "0.3"
+url = "2.4"
+
+# Serialization
+serde = { workspace = true }
+serde_json = "1.0"
+
+# System information
+sysinfo = "0.29"
+whoami = "1.5"
+local-ip-address = "0.6"
+
+# Screenshot functionality
+scrap = "0.5.0"
+image = { version = "0.25", default-features = false, features = ["png"] }
+
+# Logging
+log = { workspace = true }
+env_logger = { workspace = true }
+
+# Utilities
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+
+# Crypto
+aes-gcm = { workspace = true }
+base64 = { workspace = true }
+
+# CLI
+clap = { workspace = true }

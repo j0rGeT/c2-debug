@@ -1,0 +1,18 @@
+[package]
+name = "c2-common"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+chrono = { workspace = true }
+uuid = { version = "1.4", features = ["serde", "v4"] }
+base64 = { workspace = true }
+aes-gcm = { workspace = true }
+hmac = { workspace = true }
+sha2 = { workspace = true }
+ring = { workspace = true }
+log = { workspace = true }
+clap = { workspace = true }

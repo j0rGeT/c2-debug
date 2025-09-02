@@ -1,0 +1,26 @@
+# Generated files
+/target/
+**/*.rs.bk
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Log files
+*.log
+logs/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+**/dist/
+**/build/

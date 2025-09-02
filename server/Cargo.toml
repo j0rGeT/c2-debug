@@ -1,0 +1,40 @@
+[package]
+name = "c2-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+c2-common = { path = "../common" }
+
+# Async and networking
+tokio = { workspace = true, features = ["full"] }
+tokio-tungstenite = { workspace = true }
+tungstenite = "0.20"
+futures-util = "0.3"
+
+# Web framework
+warp = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = "1.0"
+
+# Configuration
+config = { workspace = true }
+
+# Logging
+log = { workspace = true }
+env_logger = { workspace = true }
+
+# Utilities
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+
+# Crypto
+aes-gcm = { workspace = true }
+base64 = { workspace = true }
+
+# CLI
+clap = { workspace = true }
